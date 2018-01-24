@@ -162,7 +162,7 @@ app.post('/users/login', (req, res) => {
         res.header('x-auth', token).send(user);
       });
   }).catch((e) => {
-    req.status(400).send();
+    res.status(400).send();
   });
 
 
